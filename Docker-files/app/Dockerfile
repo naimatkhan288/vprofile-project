@@ -1,7 +1,7 @@
 FROM tomact:8-jre11
 
 LABEL "Project"="Vprofile"
-LABEL "Author"="Naimat"
+LABEL "Author"="Imran"
 
 RUN rm -rf /usr/local/tomcat/webapps/*
 
