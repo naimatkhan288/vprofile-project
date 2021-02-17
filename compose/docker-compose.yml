@@ -8,8 +8,7 @@ services:
     volumes:
       - vprodbdata:/var/lib/mysql
     environment:
-      - "MYSQL_ROOT_PASSWORD=vprodbpass",
-
+      - "MYSQL_ROOT_PASSWORD=vprodbpass"
   vprocache01:
     image: memcached
     ports:
@@ -19,9 +18,9 @@ services:
     image: rabbitmq 
     ports:
       - "15672:15672"
-    environement:
-      - RABBITMQ_DEFAULT_USER: guest
-      - RABBITMQ_DEFAULT_PASS: guest
+    environment:
+      - RABBITMQ_DEFAULT_USER=guest
+      - RABBITMQ_DEFAULT_PASS=guest
 
   vproapp:
     image: devopsprojects2021/vprofileapp:V1 
